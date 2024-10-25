@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Mulele Tours and Safaris</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showThankYou() {
+            const thankYouMessage = document.getElementById("thank-you-message");
+            thankYouMessage.style.display = "block";
+            document.getElementById("feedback-form").reset(); // Reset form after submission
+        }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Mulele Tours and Safaris</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="tours.html">Tours</a>
+            <a href="feedback.html" class="active">Feedback</a>
+            <a href="contact.html">Contact</a>
+            <a href="news.html">News</a>
+        </nav>
+    </header>
+
+    <!-- Feedback Section -->
+    <section class="section feedback-section">
+        <h2>We Value Your Feedback</h2>
+        <p>
+            At Mulele Tours and Safaris, we strive to provide exceptional experiences for all our guests. Your feedback is essential to us as it helps improve our services and offerings. Please take a moment to share your thoughts and suggestions regarding your experience with us.
+        </p>
+
+        <form id="feedback-form" onsubmit="showThankYou(); return false;">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <!-- Thank You Message -->
+        <div id="thank-you-message" style="display:none; margin-top:20px; color: green;">
+            Thank you for your feedback! We appreciate your input.
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mulele Tours and Safaris. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

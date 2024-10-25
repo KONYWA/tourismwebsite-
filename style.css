@@ -1,0 +1,483 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #004080;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a:hover, header nav a.active {
+    text-decoration: underline;
+    color: #b3d1ff;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 20px;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #ffffff;
+    color: #004080;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #b3d1ff;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.intro h2 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.intro button {
+    background-color: #004080;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.intro button:hover {
+    background-color: #0059b3;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+/* Tour Gallery Styling */
+.tour-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tour-card {
+    background-color: #e6f0ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: left;
+    width: 350px;
+    transition: transform 0.3s;
+}
+
+.tour-card:hover {
+    transform: scale(1.05);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tour-card h3 {
+    color: #004080;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.tour-card p {
+    color: #333;
+    line-height: 1.4;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.tour-card span {
+    color: #555;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+/* Contact Section Styling */
+.contact-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    background-color: #e6f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    color: #004080;
+}
+
+.contact-info a {
+    color: #004080;
+    text-decoration: underline;
+}
+
+/* Social Media Section */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media h3 {
+    color: #004080;
+}
+
+.social-media a {
+    color: #004080;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+/* About Section Styling */
+.about-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.about-section h2 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section h3 {
+    color: #004080;
+    margin-top: 20px;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+/* Services Section Styling */
+.services-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.services-section h2 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.services-section p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services-section h3 {
+    color: #004080;
+    margin-top: 20px;<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Mulele Tours and Safaris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Mulele Tours and Safaris</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="tours.html">Tours</a>
+            <a href="feedback.html" class="active">Feedback</a>
+            <a href="contact.html">Contact</a>
+            <a href="news.html">News</a>
+        </nav>
+    </header>
+
+    <!-- Feedback Section -->
+    <section class="section feedback-section">
+        <h2>We Value Your Feedback</h2>
+        <p>
+            At Mulele Tours and Safaris, we strive to provide exceptional experiences for all our guests. Your feedback is essential to us as it helps improve our services and offerings. Please take a moment to share your thoughts and suggestions regarding your experience with us.
+        </p>
+
+        <form action="submit_feedback.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mulele Tours and Safaris. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+}
+
+.services-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.services-section ul li {
+    color: #333;
+    margin-bottom: 10px;
+}
+/* Feedback Section Styling */
+.feedback-section {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.feedback-section h2 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.feedback-section p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feedback-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-section label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.feedback-section button {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-section button:hover {
+    background-color: #003366;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0056b3;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    margin: 15px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+nav a:hover, .active {
+    background: #003d7a;
+}
+
+/* News Section Styles */
+.news-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-section h2 {
+    text-align: center;
+    color: #0056b3;
+}
+
+.news-item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px 0;
+}
+
+.news-item h3 {
+    color: #0056b3;
+    font-size: 20px;
+}
+
+.news-item p {
+    color: #333;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #0056b3;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
